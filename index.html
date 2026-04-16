@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -31,7 +32,7 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container py-2 py-lg-3 d-flex align-items-center justify-content-between">
+    <div class="container py-1 d-flex align-items-center justify-content-between">
       <div class="logo">
         <img src="./assets/images/icons/logo2.png" alt="Logo">
       </div>
@@ -40,11 +41,15 @@
           <li><a href="#">Trang chủ</a></li>
           <li><a href="#">Giải pháp</a></li>
           <li><a href="#">Sản phẩm</a></li>
-          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Khách hàng</a></li>
+          <li><a href="#">Hỗ trợ</a></li>
+          <li><a href="#">Tin tức</a></li>
         </ul>
       </nav>
       <div class="phone-number">
-        <a href="tel:0123456789" class="btn primary">0123 456 789</a>
+        <a href="tel:0123456789" class="btn btn-primary text-white d-flex align-items-center gap-2">
+          <img class="icon" src="assets/images/icons/phone.svg" alt="Phone Icon"> 0123 456 789
+        </a>
       </div>
   </header>
 
@@ -55,9 +60,9 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-test.jpg" alt="Slide 1"></div>
-        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-test.jpg" alt="Slide 2"></div>
-        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-test.jpg" alt="Slide 3"></div>
+        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-02.jpg" alt="Slide 1"></div>
+        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-02.jpg" alt="Slide 2"></div>
+        <div class="swiper-slide"><img src="assets/images/backgrounds/banner-02.jpg" alt="Slide 3"></div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -107,9 +112,9 @@
       <h2 class="title-section text-center">Phần mềm quản lý bán hàng đa ngành nghề</h2>
       <div class="sub-title text-center">Giải pháp toàn diện cho mọi ngành nghề</div>
       <div class="tabs d-flex justify-content-center align-items-center gap-3 mt-4">
-        <div class="tab-item btn btn-primary active">Quản lý bán hàng</div>
-        <div class="tab-item btn btn-primary">Quản lý công nợ</div>
-        <div class="tab-item btn btn-primary">Hóa đơn điện tử và chữ kí số</div>
+        <div class="tab-item btn active">Quản lý bán hàng</div>
+        <div class="tab-item btn">Quản lý công nợ</div>
+        <div class="tab-item btn">Hóa đơn điện tử và chữ kí số</div>
       </div>
       <div class="tab-content">
         <div class="tab-pane active">
@@ -125,19 +130,106 @@
             <div class="col col-12 col-lg-4">
               <div class="item">
                 <h3 class="title">Quản lý tập trung – Kiểm soát toàn diện</h3>
-                <p>Toàn bộ dữ liệu bán hàng, tồn kho, đơn hàng và khách hàng được quản lý tập trung trên một nền tảng duy nhất. Giúp bạn theo dõi chính xác tình hình kinh doanh theo thời gian thực, hạn chế sai sót và đưa ra quyết định nhanh chóng.</p>
+                <p>Toàn bộ dữ liệu bán hàng, tồn kho, đơn hàng và khách hàng được quản lý tập trung trên một nền tảng
+                  duy nhất. Giúp bạn theo dõi chính xác tình hình kinh doanh theo thời gian thực, hạn chế sai sót và đưa
+                  ra quyết định nhanh chóng.</p>
               </div>
             </div>
             <div class="col col-12 col-lg-4">
               <div class="item">
                 <h3 class="title">Tối ưu hóa vận hành - Tiết kiệm chi phí</h3>
-                <p>Tự động hóa quy trình từ tạo đơn, xử lý đơn hàng đến báo cáo doanh thu. Giảm thiểu thao tác thủ công, tiết kiệm thời gian và chi phí nhân sự, đồng thời nâng cao hiệu suất làm việc cho toàn bộ hệ thống.</p>
+                <p>Tự động hóa quy trình từ tạo đơn, xử lý đơn hàng đến báo cáo doanh thu. Giảm thiểu thao tác thủ công,
+                  tiết kiệm thời gian và chi phí nhân sự, đồng thời nâng cao hiệu suất làm việc cho toàn bộ hệ thống.
+                </p>
               </div>
             </div>
           </div>
         </div>
   </section>
-
+  <section class="section-02 py-4 py-lg-5">
+    <div class="title-area">
+      <div class="sub-title text-center mb-1 mb-lg-2">Dù bạn đang bán lẻ hay kinh doanh nhà hàng - dịch vụ, chúng tôi
+        cung cấp giải pháp</div>
+      <h2 class="title-section text-center">Phần mền quản lý chuyên biệt cho từng lĩnh vực kinh doanh</h2>
+    </div>
+    <div class="container-retail container py-4 py-lg-5">
+      <div class="row">
+        <div class="col-img col col-12 col-lg-6">
+          <img src="assets/images/section-02.png" width="100%" alt="Section 02 Image">
+        </div>
+        <div class="col-content col col-12 col-lg-6">
+          <div class="title">Ngành Bán buôn - Bán lẻ</div>
+          <p>Phần mềm quản lý bán hàng đa ngành nghề được thiết kế đặc biệt cho ngành bán buôn, bán lẻ</p>
+          <ul class="lists">
+            <li class="list-item active">
+              <div class="list-title">Quản lý kho thông minh</div>
+              <p class="fw-medium">Theo dõi tồn kho chính xác, tự động cập nhật khi bán hàng, giúp tránh tình trạng
+                thiếu hàng hoặc tồn
+                kho quá nhiều.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Quản lý khách hàng và chương trình khuyến mãi</div>
+              <p class="fw-medium">Ghi nhận thông tin khách hàng, lịch sử mua hàng và thiết lập chương trình khuyến mãi,
+                thẻ thành viên
+                để tăng sự trung thành của khách hàng.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Báo cáo doanh thu và phân tích kinh doanh</div>
+              <p>Cung cấp báo cáo chi tiết về doanh thu, lợi nhuận, sản phẩm bán chạy và hiệu suất nhân viên để giúp bạn
+                đưa ra quyết định kinh doanh thông minh.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Quản lý đơn hàng và thanh toán đa dạng</div>
+              <p>Hỗ trợ quản lý đơn hàng từ nhiều kênh bán hàng khác nhau và tích hợp nhiều phương thức thanh toán như
+                tiền mặt, thẻ tín dụng, ví điện tử để tạo sự thuận tiện cho khách hàng.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="justify-content-center d-flex mt-4">
+        <a href="#" class="btn-see-more">Tư vấn miễn phí <i class="uis uis-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <div class="container-retail container pt-4 pt-lg-5">
+      <div class="row">
+        <div class="col-img col col-12 col-lg-6">
+          <img src="assets/images/section-02.png" width="100%" alt="Section 02 Image">
+        </div>
+        <div class="col-content col col-12 col-lg-6">
+          <div class="title">Ngành Bán buôn - Bán lẻ</div>
+          <p>Phần mềm quản lý bán hàng đa ngành nghề được thiết kế đặc biệt cho ngành bán buôn, bán lẻ</p>
+          <ul class="lists">
+            <li class="list-item active">
+              <div class="list-title">Quản lý kho thông minh</div>
+              <p class="fw-medium">Theo dõi tồn kho chính xác, tự động cập nhật khi bán hàng, giúp tránh tình trạng
+                thiếu hàng hoặc tồn
+                kho quá nhiều.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Quản lý khách hàng và chương trình khuyến mãi</div>
+              <p class="fw-medium">Ghi nhận thông tin khách hàng, lịch sử mua hàng và thiết lập chương trình khuyến mãi,
+                thẻ thành viên
+                để tăng sự trung thành của khách hàng.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Báo cáo doanh thu và phân tích kinh doanh</div>
+              <p>Cung cấp báo cáo chi tiết về doanh thu, lợi nhuận, sản phẩm bán chạy và hiệu suất nhân viên để giúp bạn
+                đưa ra quyết định kinh doanh thông minh.</p>
+            </li>
+            <li class="list-item">
+              <div class="list-title">Quản lý đơn hàng và thanh toán đa dạng</div>
+              <p>Hỗ trợ quản lý đơn hàng từ nhiều kênh bán hàng khác nhau và tích hợp nhiều phương thức thanh toán như
+                tiền mặt, thẻ tín dụng, ví điện tử để tạo sự thuận tiện cho khách hàng.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="justify-content-center d-flex mt-4">
+        <a href="#" class="btn-see-more">Tư vấn miễn phí <i class="uis uis-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    </div>
+  </section>
   <!-- FOOTER -->
   <footer class="footer bg-primary-dark text-white">
     <div class="container">
