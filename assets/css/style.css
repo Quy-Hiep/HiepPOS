@@ -431,3 +431,37 @@ body {
     background: var(--color-primary-dark);
 }
 /* section-02 end */
+
+/* section-03 */
+.section-03 {
+    background-image: url(/assets/images/backgrounds/bg-form-footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-03 .col-content .title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.section-03 .col-content .tab {
+    flex: 1 1 40%;
+    font-weight: bold;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 50px;
+    padding: 12px 20px;
+    color:var(--color-primary-dark);
+}
+.section-03 img {
+    width: 100%;
+    border-radius: 30px;
+    
+}
+.section-03 .btn-see-more {
+    color: var(--color-primary);
+    background: #fff; 
+}
+/* section-03 end*/
+
