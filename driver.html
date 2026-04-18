@@ -104,7 +104,7 @@
       <div class="row g-3 align-items-end">
         <div class="col-md-4">
           <label class="form-label fw-bold">Hệ Điều Hành</label>
-          <select class="form-select" id="osFilter">
+          <select class="form-select" name="os" title="os"  id="osFilter">
             <option value="">-- Chọn hệ điều hành --</option>
             <option value="windows">Windows (32-bit & 64-bit)</option>
             <option value="macos">macOS</option>
@@ -113,7 +113,7 @@
         </div>
         <div class="col-md-4">
           <label class="form-label fw-bold">Loại Máy In</label>
-          <select class="form-select" id="printerTypeFilter">
+          <select class="form-select" name="printerType" title="printerType" id="printerTypeFilter">
             <option value="">-- Chọn loại máy in --</option>
             <option value="thermal">Máy In Hóa Đơn (Thermal)</option>
             <option value="inkjet">Máy In Phun Mực (Inkjet)</option>
@@ -141,12 +141,12 @@
           <div class="col-md-6 col-lg-4">
             <div class="driver-card">
               <div class="driver-icon"><i class="uis uis-print"></i></div>
-              <h5 class="driver-name">Epson TM-M30</h5>
+              <h5 class="driver-name">BP-T3</h5>
               <div class="driver-os-badges">
                 <span class="badge bg-primary">Windows</span>
                 <span class="badge bg-info">macOS</span>
               </div>
-              <p class="driver-desc">Máy in hóa đơn nhiệt, tốc độ in nhanh, phù hợp cho bán lẻ</p>
+              <p class="driver-desc">Dùng cho các dòng máy in KV804,...</p>
               <div class="driver-actions">
                 <a href="#" class="btn btn-download btn-sm">
                   <i class="uis uis-download"></i> Windows
@@ -155,19 +155,19 @@
                   <i class="uis uis-download"></i> macOS
                 </a>
               </div>
-              <small class="text-muted d-block mt-2">Phiên bản: v1.0.0</small>
+              <small class="text-muted d-block mt-2">Phiên bản: v7.11</small>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4">
             <div class="driver-card">
               <div class="driver-icon"><i class="uis uis-print"></i></div>
-              <h5 class="driver-name">Star Micronics TSP100</h5>
+              <h5 class="driver-name">365B</h5>
               <div class="driver-os-badges">
-                <span class="badge bg-primary">Windows</span>
+                <span class="badge bg-primary">Windows 7/10/11</span>
                 <span class="badge bg-info">macOS</span>
               </div>
-              <p class="driver-desc">Máy in hóa đơn đa năng, kết nối USB và mạng</p>
+              <p class="driver-desc">Dùng cho các dòng máy in 365B,....</p>
               <div class="driver-actions">
                 <a href="#" class="btn btn-download btn-sm">
                   <i class="uis uis-download"></i> Windows
@@ -185,7 +185,7 @@
               <div class="driver-icon"><i class="uis uis-print"></i></div>
               <h5 class="driver-name">Canon LBP6000</h5>
               <div class="driver-os-badges">
-                <span class="badge bg-primary">Windows</span>
+                <span class="badge bg-primary">Windows 7/10/11</span>
               </div>
               <p class="driver-desc">Máy in laser đen trắng, thích hợp cho văn phòng</p>
               <div class="driver-actions">
@@ -200,12 +200,12 @@
           <div class="col-md-6 col-lg-4">
             <div class="driver-card">
               <div class="driver-icon"><i class="uis uis-print"></i></div>
-              <h5 class="driver-name">HP DesignJet</h5>
+              <h5 class="driver-name">ZY307 - ZY606</h5>
               <div class="driver-os-badges">
-                <span class="badge bg-primary">Windows</span>
+                <span class="badge bg-primary">Windows 7/10/11</span>
                 <span class="badge bg-info">macOS</span>
               </div>
-              <p class="driver-desc">Máy in phun mực, chất lượng cao, đa màu</p>
+              <p class="driver-desc">Dùng cho các dòng máy in ZY307 và ZY606</p>
               <div class="driver-actions">
                 <a href="#" class="btn btn-download btn-sm">
                   <i class="uis uis-download"></i> Windows
@@ -217,47 +217,6 @@
               <small class="text-muted d-block mt-2">Phiên bản: v1.0.0</small>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="driver-card">
-              <div class="driver-icon"><i class="uis uis-print"></i></div>
-              <h5 class="driver-name">Brother HL-L8360</h5>
-              <div class="driver-os-badges">
-                <span class="badge bg-primary">Windows</span>
-                <span class="badge bg-info">macOS</span>
-              </div>
-              <p class="driver-desc">Máy in laser đa chức năng, scan và copy</p>
-              <div class="driver-actions">
-                <a href="#" class="btn btn-download btn-sm">
-                  <i class="uis uis-download"></i> Windows
-                </a>
-                <a href="#" class="btn btn-download btn-sm">
-                  <i class="uis uis-download"></i> macOS
-                </a>
-              </div>
-              <small class="text-muted d-block mt-2">Phiên bản: v1.0.0</small>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="driver-card">
-              <div class="driver-icon"><i class="uis uis-print"></i></div>
-              <h5 class="driver-name">Zebra ZD410</h5>
-              <div class="driver-os-badges">
-                <span class="badge bg-primary">Windows</span>
-                <span class="badge bg-info">macOS</span>
-              </div>
-              <p class="driver-desc">Máy in tem nhãn, kết nối mạng, USB</p>
-              <div class="driver-actions">
-                <a href="#" class="btn btn-download btn-sm">
-                  <i class="uis uis-download"></i> Windows
-                </a>
-                <a href="#" class="btn btn-download btn-sm">
-                  <i class="uis uis-download"></i> macOS
-                </a>
-              </div>
-              <small class="text-muted d-block mt-2">Phiên bản: v1.0.0</small>
-            </div>
           </div>
         </div>
       </div>
