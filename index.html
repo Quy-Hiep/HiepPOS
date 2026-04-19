@@ -98,9 +98,8 @@
       <div class="swiper-button-next"></div>
     </div>
     <div class="text-bottom bg-primary-light py-3">
-      <div class="container">
-        Chào mừng bạn đến với dịch vụ cung cấp phần mềm quản lý bán hàng – giải pháp giúp tối ưu vận hành, tăng doanh
-        thu và quản lý hiệu quả hơn mỗi ngày!
+      <div class="container text-center fw-semibold">
+        <i class="uis uis-check-circle text-success"></i> Giải pháp bán hàng toàn diện – Phần mềm & Thiết bị cho mọi ngành nghề
       </div>
     </div>
   </section>
@@ -130,17 +129,53 @@
 
   <!-- banner end -->
 
+  <!-- Stats Section -->
+  <section class="section-stats py-4 py-lg-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="uis uis-users-alt"></i></div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Khách hàng tin dùng</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="uis uis-shield-check"></i></div>
+            <div class="stat-number">12</div>
+            <div class="stat-label">Tháng bảo hành</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="uis uis-headphones-alt"></i></div>
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Hỗ trợ kỹ thuật</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="uis uis-rocket"></i></div>
+            <div class="stat-number">30 phút</div>
+            <div class="stat-label">Cài đặt & sử dụng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-01 py-4 py-lg-5">
     <div class="container">
       <h2 class="title-section text-center">Phần mềm quản lý bán hàng đa ngành nghề</h2>
       <div class="sub-title text-center">Giải pháp toàn diện cho mọi ngành nghề</div>
       <div class="tabs d-flex justify-content-center align-items-center gap-3 mt-4">
-        <div class="tab-item btn active">Quản lý bán hàng</div>
-        <div class="tab-item btn">Quản lý công nợ</div>
-        <div class="tab-item btn">Hóa đơn điện tử và chữ kí số</div>
+        <div class="tab-item btn active" data-tab="tab-1">Quản lý bán hàng</div>
+        <div class="tab-item btn" data-tab="tab-2">Quản lý công nợ</div>
+        <div class="tab-item btn" data-tab="tab-3">Hóa đơn điện tử và chữ kí số</div>
       </div>
       <div class="tab-content">
-        <div class="tab-pane active">
+        <div class="tab-pane active" id="tab-1">
           <div class="row">
             <div class="col col-12 col-lg-4">
               <div class="item">
@@ -168,6 +203,75 @@
             </div>
           </div>
         </div>
+        <div class="tab-pane" id="tab-2" style="display: none;">
+          <div class="row">
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Theo dõi công nợ khách hàng</h3>
+                <p>Quản lý chi tiết số tiền khách hàng còn nợ, lịch sử thanh toán và hạn thanh toán. Hệ thống tự động nhắc nhở khi đến hạn, giúp bạn thu hồi công nợ kịp thời và hiệu quả.</p>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Quản lý công nợ nhà cung cấp</h3>
+                <p>Theo dõi số tiền còn nợ nhà cung cấp, lịch nhập hàng và lịch thanh toán. Giúp bạn chủ động trong việc thanh toán và duy trì mối quan hệ tốt với đối tác.</p>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Báo cáo công nợ tổng hợp</h3>
+                <p>Báo cáo chi tiết tổng nợ phải thu, nợ phải trả theo từng khách hàng, nhà cung cấp. Giúp bạn nắm bắt tình hình tài chính và đưa ra quyết định thanh toán hợp lý.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab-3" style="display: none;">
+          <div class="row">
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Xuất hóa đơn điện tử nhanh chóng</h3>
+                <p>Tích hợp trực tiếp với hệ thống hóa đơn điện tử, cho phép xuất hóa đơn VAT ngay khi bán hàng. Tuân thủ đầy đủ quy định của cơ quan thuế, tiết kiệm thời gian và chi phí in ấn.</p>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Chữ ký số bảo mật cao</h3>
+                <p>Hỗ trợ ký số trực tiếp trên hóa đơn điện tử, đảm bảo tính pháp lý và bảo mật. Giúp doanh nghiệp thực hiện giao dịch, ký hợp đồng từ xa một cách an toàn và tiện lợi.</p>
+              </div>
+            </div>
+            <div class="col col-12 col-lg-4">
+              <div class="item">
+                <h3 class="title">Quản lý & lưu trữ hóa đơn</h3>
+                <p>Toàn bộ hóa đơn được lưu trữ trên hệ thống điện toán đám mây, dễ dàng tìm kiếm, tra cứu và xuất báo cáo. Không lo mất mát dữ liệu, đáp ứng yêu cầu kiểm tra của cơ quan thuế.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var tabItems = document.querySelectorAll('.section-01 .tab-item');
+        var tabPanes = document.querySelectorAll('.section-01 .tab-pane');
+        tabItems.forEach(function(tab) {
+          tab.addEventListener('click', function() {
+            tabItems.forEach(function(t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+            var target = tab.getAttribute('data-tab');
+            tabPanes.forEach(function(pane) {
+              if (pane.id === target) {
+                pane.style.display = '';
+                pane.classList.add('active');
+              } else {
+                pane.style.display = 'none';
+                pane.classList.remove('active');
+              }
+            });
+          });
+        });
+      });
+    </script>
   </section>
 
   <section class="section-02 py-4 py-lg-5">
@@ -176,225 +280,164 @@
         cung cấp giải pháp</div>
       <h2 class="title-section text-center">Phần mền quản lý chuyên biệt cho từng lĩnh vực kinh doanh</h2>
     </div>
-    <div class="container-retail container py-4 py-lg-5">
-      <div class="row">
-        <div class="col-img col col-12 col-lg-6">
-          <img src="assets/images/section-02.png" width="100%" alt="Section 02 Image">
-        </div>
-        <div class="col-content col col-12 col-lg-6">
-          <div class="title">Ngành Bán buôn - Bán lẻ</div>
-          <p>Phần mềm quản lý bán hàng đa ngành nghề được thiết kế đặc biệt cho ngành bán buôn, bán lẻ</p>
-          <ul class="lists">
-            <li class="list-item active">
-              <div class="list-title">Quản lý kho thông minh</div>
-              <p class="fw-medium">Theo dõi tồn kho chính xác, tự động cập nhật khi bán hàng, giúp tránh tình trạng
-                thiếu hàng hoặc tồn
-                kho quá nhiều.</p>
-            </li>
-            <li class="list-item">
-              <div class="list-title">Quản lý khách hàng và chương trình khuyến mãi</div>
-              <p class="fw-medium">Ghi nhận thông tin khách hàng, lịch sử mua hàng và thiết lập chương trình khuyến mãi,
-                thẻ thành viên
-                để tăng sự trung thành của khách hàng.</p>
-            </li>
-            <li class="list-item">
-              <div class="list-title">Báo cáo doanh thu và phân tích kinh doanh</div>
-              <p>Cung cấp báo cáo chi tiết về doanh thu, lợi nhuận, sản phẩm bán chạy và hiệu suất nhân viên để giúp bạn
-                đưa ra quyết định kinh doanh thông minh.</p>
-            </li>
-            <li class="list-item">
-              <div class="list-title">Quản lý đơn hàng và thanh toán đa dạng</div>
-              <p>Hỗ trợ quản lý đơn hàng từ nhiều kênh bán hàng khác nhau và tích hợp nhiều phương thức thanh toán như
-                tiền mặt, thẻ tín dụng, ví điện tử để tạo sự thuận tiện cho khách hàng.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="justify-content-center d-flex mt-4">
-        <a href="tel:0855285872" class="btn-see-more">Tư vấn miễn phí <i class="uis uis-arrow-circle-right"></i></a>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="section-03">
-    <div class="container py-4 py-lg-5">
-      <h2 class="title-section text-center text-white">Chúng tôi thiết kế phần mềm quản lý bán hàng
-        chuyên biệt cho từng ngành hàng</h2>
-
-      <div class="row g-4 mt-4">
-        <div class="col col-12 col-lg-6 col-content">
-          <h3 class="title">Nhóm ngành bán buôn, bán lẻ</h3>
-          <p class="text-white fw-medium">Phần mềm được thiết kế đặc biệt để đáp ứng nhu cầu quản lý bán hàng trong các
-            lĩnh vực như thời trang, tạp hóa, vật liệu xây dựng, mỹ phẩm, nhà thuốc, nông sản, mẹ và bé, xe máy móc,
-            sách và văn phòng phẩm.</p>
-          <div class="list-tabs d-flex flex-wrap gap-3 gap-lg-4 mt-4">
-            <div class="tab"><i class="uis uis-bookmark"></i> Thời trang</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Tạp Hóa, Siêu thị</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Vật liệu xây dựng</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Mỹ Phẩm</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Nhà Thuốc</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Nông sản, thực phẩm</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Mẹ và bé</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Xe, máy móc</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Sách, Văn phòng phẩm</div>
-            <div class="tab"><i class="uis uis-bookmark"></i> Khác</div>
-          </div>
-        </div>
-        <div class="col col-12 col-lg-6 col-img">
-          <img src="./assets/images/section-03.jpg" width="100%" alt="Section 02 Image">
-        </div>
-      </div>
-      <div class="justify-content-center d-flex mt-4 mt-lg-5">
-        <a href="tel:0855285872" class="btn-see-more">Đăng kí ngay <i class="uis uis-arrow-circle-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-reviews py-4 py-lg-5">
-    <div class="container">
-      <h2 class="title-section text-center mb-3 mb-lg-4">Khách hàng nói gì về chúng tôi?</h2>
-      <div class="swiper reviewsSwiper">
+    <div class="container py-4 py-lg-5 position-relative">
+      <div class="swiper section-02-swiper">
         <div class="swiper-wrapper">
-          <!-- Review 1 -->
+          <!-- Slide 1: Bán buôn - Bán lẻ -->
           <div class="swiper-slide">
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <img src="assets/images/icons/logo2.png" alt="Nguyễn Văn A">
-                </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Nguyễn Văn A</h4>
-                  <div class="rating">
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                  </div>
-                </div>
+            <div class="row align-items-center">
+              <div class="col-img col col-12 col-lg-6">
+                <img src="assets/images/section-02.png" width="100%" alt="Ngành Bán buôn - Bán lẻ">
               </div>
-              <div class="review-body">
-                <p>"Phần mềm quản lý bán hàng của Hiệp POS đã giúp tôi tiết kiệm rất nhiều thời gian và công sức trong
-                  việc quản lý cửa hàng. Giao diện thân thiện và dễ sử dụng, tôi rất hài lòng!"</p>
+              <div class="col-content col col-12 col-lg-6">
+                <div class="title">Ngành Bán buôn - Bán lẻ</div>
+                <p>Phần mềm quản lý bán hàng đa ngành nghề được thiết kế đặc biệt cho ngành bán buôn, bán lẻ</p>
+                <ul class="lists">
+                  <li class="list-item active">
+                    <div class="list-title">Quản lý kho thông minh</div>
+                    <p class="fw-medium">Theo dõi tồn kho chính xác, tự động cập nhật khi bán hàng, giúp tránh tình trạng thiếu hàng hoặc tồn kho quá nhiều.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý khách hàng và chương trình khuyến mãi</div>
+                    <p class="fw-medium">Ghi nhận thông tin khách hàng, lịch sử mua hàng và thiết lập chương trình khuyến mãi, thẻ thành viên để tăng sự trung thành của khách hàng.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Báo cáo doanh thu và phân tích kinh doanh</div>
+                    <p>Cung cấp báo cáo chi tiết về doanh thu, lợi nhuận, sản phẩm bán chạy và hiệu suất nhân viên.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý đơn hàng và thanh toán đa dạng</div>
+                    <p>Hỗ trợ quản lý đơn hàng từ nhiều kênh và tích hợp nhiều phương thức thanh toán.</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <!-- Review 2 -->
+          <!-- Slide 2: Ăn uống - Giải trí -->
           <div class="swiper-slide">
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <img src="assets/images/icons/logo2.png" alt="Trần Thị B">
-                </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Trần Thị B</h4>
-                  <div class="rating">
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                  </div>
-                </div>
+            <div class="row align-items-center">
+              <div class="col-img col col-12 col-lg-6">
+                <img src="assets/images/section-02.png" width="100%" alt="Ngành Ăn uống - Giải trí">
               </div>
-              <div class="review-body">
-                <p>"Tôi đã thử nhiều phần mềm quản lý bán hàng khác nhau, nhưng Hiệp POS là lựa chọn tốt nhất. Hỗ trợ
-                  khách hàng nhanh chóng và hiệu quả, tôi rất ấn tượng!"</p>
+              <div class="col-content col col-12 col-lg-6">
+                <div class="title">Ngành Ăn uống - Giải trí</div>
+                <p>Giải pháp quản lý toàn diện cho nhà hàng, quán cà phê, quán ăn và các cơ sở giải trí</p>
+                <ul class="lists">
+                  <li class="list-item active">
+                    <div class="list-title">Quản lý bàn và order</div>
+                    <p class="fw-medium">Sơ đồ bàn trực quan, order tại bàn nhanh chóng, chuyển bàn/gộp bàn linh hoạt.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý thực đơn và nguyên vật liệu</div>
+                    <p class="fw-medium">Cập nhật thực đơn dễ dàng, theo dõi nguyên vật liệu, cảnh báo khi sắp hết hàng.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Báo cáo doanh thu theo ca/ngày</div>
+                    <p>Thống kê chi tiết doanh thu theo ca làm việc, theo ngày, theo món ăn bán chạy.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Tích hợp bếp và phục vụ</div>
+                    <p>Kết nối trực tiếp giữa quầy order và bếp, giảm sai sót và tăng tốc độ phục vụ.</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <!-- Review 3 -->
+          <!-- Slide 3: Lưu trú - Làm đẹp -->
           <div class="swiper-slide">
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <img src="assets/images/icons/logo2.png" alt="Lê Văn C">
-                </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Lê Văn C</h4>
-                  <div class="rating">
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                  </div>
-                </div>
+            <div class="row align-items-center">
+              <div class="col-img col col-12 col-lg-6">
+                <img src="assets/images/section-02.png" width="100%" alt="Ngành Lưu trú - Làm đẹp">
               </div>
-              <div class="review-body">
-                <p>"Phần mềm của Hiệp POS giúp tôi quản lý tồn kho và đơn hàng một cách dễ dàng. Tôi có thể theo dõi
-                  doanh thu và lợi nhuận một cách chính xác hơn bao giờ hết."</p>
+              <div class="col-content col col-12 col-lg-6">
+                <div class="title">Ngành Lưu trú - Làm đẹp</div>
+                <p>Phần mềm quản lý dành riêng cho khách sạn, homestay, spa, salon và các dịch vụ làm đẹp</p>
+                <ul class="lists">
+                  <li class="list-item active">
+                    <div class="list-title">Đặt lịch và quản lý lịch hẹn</div>
+                    <p class="fw-medium">Khách hàng đặt lịch online, tự động nhắc nhở, tránh trùng lịch và bỏ lỡ khách.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý dịch vụ và gói combo</div>
+                    <p class="fw-medium">Tạo và quản lý các gói dịch vụ, combo ưu đãi, thẻ thành viên linh hoạt.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Chăm sóc khách hàng</div>
+                    <p>Lưu trữ lịch sử sử dụng dịch vụ, gửi tin nhắn chúc mừng sinh nhật, khuyến mãi cá nhân.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý phòng và công suất</div>
+                    <p>Theo dõi tình trạng phòng, công suất sử dụng, doanh thu theo từng dịch vụ.</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <!-- Review 4 -->
+          <!-- Slide 4: Ngành nghề khác -->
           <div class="swiper-slide">
-            <div class="review-card">
-              <div class="review-header">
-                <div class="reviewer-avatar">
-                  <img src="assets/images/icons/logo2.png" alt="Phạm Minh D">
-                </div>
-                <div class="reviewer-info">
-                  <h4 class="reviewer-name">Phạm Minh D</h4>
-                  <div class="rating">
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                  </div>
-                </div>
+            <div class="row align-items-center">
+              <div class="col-img col col-12 col-lg-6">
+                <img src="assets/images/section-02.png" width="100%" alt="Ngành nghề khác">
               </div>
-              <div class="review-body">
-                <p>"Dservice của Hiệp POS thực sự tuyệt vời. Đội support rất nhiệt tình và sẵn sàng giải đáp mọi thắc
-                  mắc của tôi. Chắc chắn sẽ giới thiệu cho các bạn khác!"</p>
+              <div class="col-content col col-12 col-lg-6">
+                <div class="title">Ngành nghề khác</div>
+                <p>Giải pháp linh hoạt, tùy biến cho mọi loại hình kinh doanh và dịch vụ khác</p>
+                <ul class="lists">
+                  <li class="list-item active">
+                    <div class="list-title">Tùy biến theo nhu cầu</div>
+                    <p class="fw-medium">Cấu hình linh hoạt phù hợp với đặc thù từng ngành nghề kinh doanh của bạn.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Quản lý công nợ</div>
+                    <p class="fw-medium">Theo dõi công nợ khách hàng và nhà cung cấp, nhắc nhở thanh toán tự động.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Hóa đơn điện tử</div>
+                    <p>Xuất hóa đơn điện tử nhanh chóng, đúng quy định, tích hợp trực tiếp với phần mềm.</p>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-title">Đa chi nhánh</div>
+                    <p>Quản lý nhiều cửa hàng, chi nhánh trên cùng một hệ thống, đồng bộ dữ liệu realtime.</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Pagination -->
-        <div class="swiper-pagination reviewsPagination"></div>
-
-        <!-- Navigation arrows -->
-        <div class="swiper-button-prev reviewsPrev"></div>
-        <div class="swiper-button-next reviewsNext"></div>
       </div>
+      <!-- Navigation buttons -->
+      <div class="section-02-prev swiper-nav-btn"><i class="uil uil-angle-left-b"></i></div>
+      <div class="section-02-next swiper-nav-btn"><i class="uil uil-angle-right-b"></i></div>
+      <!-- Pagination -->
+      <div class="section-02-pagination"></div>
     </div>
-
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const reviewsSwiper = new Swiper('.reviewsSwiper', {
+        new Swiper('.section-02-swiper', {
           loop: true,
           autoplay: {
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
           },
+          navigation: {
+            nextEl: '.section-02-next',
+            prevEl: '.section-02-prev',
+          },
           pagination: {
-            el: '.reviewsPagination',
+            el: '.section-02-pagination',
             clickable: true,
           },
-          navigation: {
-            nextEl: '.reviewsNext',
-            prevEl: '.reviewsPrev',
-          },
-          breakpoints: {
-            0: {
-              slidesPerView: 1,
-              spaceBetween: 20
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 30
-            },
-            1200: {
-              slidesPerView: 3,
-              spaceBetween: 30
-            }
-          },
+          slidesPerView: 1,
+          spaceBetween: 0,
+        });
+
+        document.querySelectorAll('.section-02 .list-item').forEach(function (item) {
+          item.addEventListener('click', function () {
+            this.closest('.lists').querySelectorAll('.list-item').forEach(function (li) {
+              li.classList.remove('active');
+            });
+            this.classList.add('active');
+          });
         });
       });
     </script>
@@ -662,6 +705,170 @@
       });
     });
   </script>
+
+  <section class="section-reviews py-4 py-lg-5">
+    <div class="container">
+      <h2 class="title-section text-center mb-3 mb-lg-4">Khách hàng nói gì về chúng tôi?</h2>
+      <div class="swiper reviewsSwiper">
+        <div class="swiper-wrapper">
+          <!-- Review 1 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="assets/images/icons/logo2.png" alt="Anh Trần Minh Tuấn">
+                </div>
+                <div class="reviewer-info">
+                  <h4 class="reviewer-name">Anh Trần Minh Tuấn</h4>
+                  <span class="reviewer-role">Chủ cửa hàng tạp hóa, Phan Thiết</span>
+                  <div class="rating">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>"Phần mềm quản lý bán hàng của Hiệp POS đã giúp tôi tiết kiệm rất nhiều thời gian và công sức trong
+                  việc quản lý cửa hàng. Giao diện thân thiện và dễ sử dụng, tôi rất hài lòng!"</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="assets/images/icons/logo2.png" alt="Chị Nguyễn Thu Hà">
+                </div>
+                <div class="reviewer-info">
+                  <h4 class="reviewer-name">Chị Nguyễn Thu Hà</h4>
+                  <span class="reviewer-role">Quản lý nhà thuốc, Mũi Né</span>
+                  <div class="rating">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>"Tôi đã thử nhiều phần mềm quản lý bán hàng khác nhau, nhưng Hiệp POS là lựa chọn tốt nhất. Hỗ trợ
+                  khách hàng nhanh chóng và hiệu quả, tôi rất ấn tượng!"</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="assets/images/icons/logo2.png" alt="Anh Lê Hoàng Phúc">
+                </div>
+                <div class="reviewer-info">
+                  <h4 class="reviewer-name">Anh Lê Hoàng Phúc</h4>
+                  <span class="reviewer-role">Chủ quán cà phê, Bình Thuận</span>
+                  <div class="rating">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>"Phần mềm của Hiệp POS giúp tôi quản lý tồn kho và đơn hàng một cách dễ dàng. Tôi có thể theo dõi
+                  doanh thu và lợi nhuận một cách chính xác hơn bao giờ hết."</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="reviewer-avatar">
+                  <img src="assets/images/icons/logo2.png" alt="Chị Phạm Thị Mai Lan">
+                </div>
+                <div class="reviewer-info">
+                  <h4 class="reviewer-name">Chị Phạm Thị Mai Lan</h4>
+                  <span class="reviewer-role">Chủ shop thời trang, Phan Thiết</span>
+                  <div class="rating">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="review-body">
+                <p>"Dịch vụ hỗ trợ của Hiệp POS thực sự tuyệt vời. Đội kỹ thuật rất nhiệt tình, cài đặt tận nơi và hướng dẫn rất chi tiết. Đã giới thiệu cho nhiều bạn bè kinh doanh!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination reviewsPagination"></div>
+
+        <!-- Navigation arrows -->
+        <div class="swiper-button-prev reviewsPrev"></div>
+        <div class="swiper-button-next reviewsNext"></div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const reviewsSwiper = new Swiper('.reviewsSwiper', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.reviewsPagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.reviewsNext',
+            prevEl: '.reviewsPrev',
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            }
+          },
+        });
+      });
+    </script>
+  </section>
+
+  <section class="section-cta py-4 py-lg-5">
+    <div class="container text-center">
+      <h2 class="title-section text-white mb-3">Bắt đầu sử dụng ngay hôm nay</h2>
+      <p class="text-white opacity-75 mb-4 mx-auto" style="max-width: 600px;">Đăng ký dùng thử miễn phí hoặc liên hệ tư vấn. Đội ngũ kỹ thuật sẵn sàng hỗ trợ bạn cài đặt và vận hành trong 30 phút.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="tel:0855285872" class="btn-cta-primary"><i class="uis uis-phone"></i> Gọi tư vấn miễn phí</a>
+        <a href="https://zalo.me/0855285872" class="btn-cta-secondary" target="_blank"><img src="assets/images/icons/icon_zalo_50x50.png" alt="Zalo" style="width: 20px; height: 20px;"> Nhắn Zalo ngay</a>
+      </div>
+    </div>
+  </section>
 
   <section class="section-news py-4 py-lg-5">
     <div class="container">
