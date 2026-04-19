@@ -953,6 +953,17 @@ body {
     min-height: 50px;
 }
 
+.section-news .news-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.section-news .news-title a:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
 .section-news .news-description {
     font-size: 14px;
     line-height: 1.6;
