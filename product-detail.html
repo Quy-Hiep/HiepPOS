@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chi tiết sản phẩm - phần mềm quản lý bán hàng và thiết bị bán hàng từ Hiệp POS.">
-  <meta name="keywords" content="sản phẩm, POS, máy bán hàng, phần mềm quản lý, thiết bị">
+  <meta name="description" content="Máy In Hóa Đơn Nhiệt - Hiệp POS. Tốc độ in nhanh 150-200mm/s, kết nối USB/Mạng, độ bền cao. Giải pháp in hóa đơn chuyên nghiệp cho cửa hàng.">
+  <meta name="keywords" content="máy in hóa đơn, máy in nhiệt, máy in bill, thiết bị bán hàng, Hiệp POS">
   <meta name="author" content="Hiệp POS">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Chi Tiết Sản Phẩm - Hiệp POS">
-  <meta property="og:description" content="Khám phá chi tiết sản phẩm phần mềm và thiết bị bán hàng từ Hiệp POS.">
-  <meta property="og:image" content="https://mayinbilltinhtien.vn/assets/images/icons/logo2.png">
+  <meta property="og:title" content="Máy In Hóa Đơn Nhiệt - Hiệp POS">
+  <meta property="og:description" content="Máy in hóa đơn nhiệt chuyên dùng, tốc độ in nhanh 150-200mm/s, chất lượng cao.">
+  <meta property="og:image" content="https://mayinbilltinhtien.vn/assets/images/may-in-nhiet.jpg">
   <meta property="og:url" content="https://mayinbilltinhtien.vn/product-detail.html">
   <meta property="og:type" content="product">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Chi Tiết Sản Phẩm">
-  <meta name="twitter:description" content="Chi tiết sản phẩm phần mềm quản lý bán hàng.">
-  <meta name="twitter:image" content="https://mayinbilltinhtien.vn/assets/images/icons/logo2.png">
-  <title>Chi Tiết Sản Phẩm - Hiệp POS</title>
+  <meta name="twitter:title" content="Máy In Hóa Đơn Nhiệt - Hiệp POS">
+  <meta name="twitter:description" content="Máy in hóa đơn nhiệt chuyên dùng, tốc độ in nhanh 150-200mm/s.">
+  <meta name="twitter:image" content="https://mayinbilltinhtien.vn/assets/images/may-in-nhiet.jpg">
+  <title>Máy In Hóa Đơn Nhiệt - Hiệp POS</title>
   <link rel="icon" href="assets/images/icons/logo2.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -30,13 +30,13 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/solid.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/product-detail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18005648079"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'AW-18005648079');
   </script>
 </head>
@@ -50,8 +50,9 @@
         <div class="logo">
           <a href="index.html"><img src="./assets/images/icons/logo2.png" alt="Logo"></a>
         </div>
-        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse order-2 order-lg-1 navbar-collapse justify-content-center" id="navbarNavAltMarkup">
@@ -59,8 +60,8 @@
             <a class="nav-link" href="index.html">Trang chủ</a>
             <a class="nav-link" href="aboutus.html">Giới thiệu</a>
             <a class="nav-link" href="#">Giải pháp</a>
-            <a class="nav-link" href="products.html">Sản Phẩm</a>
-            <a class="nav-link" href="#">Khách hàng</a>
+            <a class="nav-link active" aria-current="page" href="products.html">Sản Phẩm</a>
+            <a class="nav-link" href="customers.html">Khách hàng</a>
             <a class="nav-link" href="driver.html">Tải Driver</a>
             <a class="nav-link" href="#">Hỗ trợ</a>
             <a class="nav-link" href="news.html">Tin tức</a>
@@ -78,258 +79,111 @@
   <!-- BREADCRUMB -->
   <nav class="breadcrumb-nav bg-light py-3 border-bottom">
     <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-          <li class="breadcrumb-item"><a href="products.html">Sản Phẩm</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
-        </ol>
-      </nav>
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="products.html">Sản phẩm</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Máy In Hóa Đơn Nhiệt</li>
+      </ol>
     </div>
   </nav>
 
-  <!-- PRODUCT DETAIL SECTION -->
-  <section class="product-detail-section py-5">
+  <!-- PRODUCT DETAIL -->
+  <section class="product-detail py-4 py-lg-5">
     <div class="container">
-      <div class="row g-4">
-        <!-- Product Main Content -->
-        <div class="col-lg-8">
-          <div class="product-detail">
-            <!-- Product Gallery -->
-            <div class="product-gallery mb-4">
-              <div class="product-main-image">
-                <img src="assets/images/products/pos-machine.jpg" alt="Máy POS Bán Hàng" class="product-image">
-              </div>
-              <div class="product-thumbnails mt-3">
-                <img src="assets/images/products/pos-machine.jpg" alt="Thumbnail 1" class="thumbnail-image active">
-                <img src="assets/images/products/pos-machine.jpg" alt="Thumbnail 2" class="thumbnail-image">
-                <img src="assets/images/products/pos-machine.jpg" alt="Thumbnail 3" class="thumbnail-image">
-                <img src="assets/images/products/pos-machine.jpg" alt="Thumbnail 4" class="thumbnail-image">
-              </div>
+      <div class="row g-4 g-lg-5">
+        <!-- Product Images -->
+        <div class="col-12 col-lg-6">
+          <div class="product-gallery">
+            <div class="main-image-wrapper">
+              <img src="assets/images/may-in-nhiet.jpg" alt="Máy In Hóa Đơn Nhiệt" class="main-image" id="mainImage">
             </div>
-
-            <!-- Product Info -->
-            <div class="product-info">
-              <!-- Product Header -->
-              <div class="product-header mb-4">
-                <div class="product-meta mb-3">
-                  <span class="product-category-badge">Thiết Bị</span>
-                  <span class="product-rating">
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star"></i>
-                    <i class="uis uis-star-outline"></i>
-                    <span class="rating-text">(125 đánh giá)</span>
-                  </span>
-                </div>
-                <h1 class="product-title">Máy POS Bán Hàng - All-in-One Touch Screen</h1>
-                <p class="product-subtitle">Giải pháp quản lý bán hàng hoàn chỉnh cho cửa hàng bán lẻ</p>
+            <div class="thumbnail-list">
+              <div class="thumbnail active" onclick="changeImage(this)">
+                <img src="assets/images/may-in-nhiet.jpg" alt="Máy In Hóa Đơn Nhiệt - Ảnh 1">
               </div>
-
-              <!-- Product Price -->
-              <div class="product-pricing mb-4 p-3 bg-light rounded">
-                <div class="price-section">
-                  <span class="price-label">Giá bán:</span>
-                  <span class="price-amount">15,990,000 ₫</span>
-                  <span class="price-old">19,990,000 ₫</span>
-                  <span class="price-discount">-20%</span>
-                </div>
-                <div class="stock-status mt-2">
-                  <i class="uis uis-check-circle"></i> Còn hàng (5 cái)
-                </div>
-              </div>
-
-              <!-- Product Features -->
-              <div class="product-features mb-4">
-                <h3 class="features-title">Đặc điểm nổi bật</h3>
-                <ul class="features-list">
-                  <li><i class="uis uis-check"></i> Màn hình cảm ứng 15.6 inch - Full HD</li>
-                  <li><i class="uis uis-check"></i> Bộ xử lý Intel Core i5 - Hiệu suất mạnh mẽ</li>
-                  <li><i class="uis uis-check"></i> RAM 8GB, SSD 256GB - Tốc độ cao</li>
-                  <li><i class="uis uis-check"></i> Hỗ trợ đa phương thức thanh toán</li>
-                  <li><i class="uis uis-check"></i> Kết nối Internet tích hợp (Wifi + 4G)</li>
-                  <li><i class="uis uis-check"></i> Bảo hành 2 năm, hỗ trợ 24/7</li>
-                </ul>
-              </div>
-
-              <!-- Product Actions -->
-              <div class="product-actions mb-4">
-                <div class="quantity-selector">
-                  <label>Số lượng:</label>
-                  <div class="input-group" style="width: 120px;">
-                    <input type="number" class="form-control text-center" value="1" min="1">
-                  </div>
-                </div>
-              </div>
-
-              <!-- Buttons -->
-              <div class="product-buttons">
-                <button class="btn btn-primary btn-lg">
-                  <i class="uis uis-shopping-cart"></i> Thêm vào giỏ hàng
-                </button>
-                <button class="btn btn-outline-primary btn-lg">
-                  <i class="uis uis-heart"></i> Yêu thích
-                </button>
-              </div>
-
-              <!-- Product Details -->
-              <div class="product-description mt-5 pt-5 border-top">
-                <h2>Mô tả sản phẩm</h2>
-                <p>
-                  Máy POS Bán Hàng All-in-One của Hiệp POS là giải pháp quản lý bán hàng toàn diện cho các cửa hàng bán lẻ, 
-                  quán ăn, và các doanh nghiệp nhỏ. Với thiết kế hiện đại, giao diện thân thiện, và hiệu suất mạnh mẽ, 
-                  sản phẩm này là lựa chọn lý tưởng cho các chủ doanh nghiệp muốn nâng cao hiệu quả kinh doanh.
-                </p>
-
-                <h3>Thông số kỹ thuật</h3>
-                <table class="specs-table">
-                  <tr>
-                    <td class="spec-label">Màn hình</td>
-                    <td>15.6 inch, Full HD (1920x1080), Cảm ứng điện dung</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Bộ xử lý</td>
-                    <td>Intel Core i5-7200U, 2.5GHz - 3.1GHz</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">RAM</td>
-                    <td>8GB DDR4 (có thể nâng cấp lên 16GB)</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Lưu trữ</td>
-                    <td>SSD 256GB NVMe (có thể nâng cấp lên 512GB)</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Kết nối</td>
-                    <td>Wifi 802.11ac, 4G LTE, Ethernet, USB 3.0 x2, COM x2</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Hệ điều hành</td>
-                    <td>Windows 10/11 Pro, Linux</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Điện</td>
-                    <td>AC 100-240V, 65W power adapter</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Kích thước</td>
-                    <td>38cm (W) x 24cm (D) x 7cm (H)</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Trọng lượng</td>
-                    <td>2.5 kg</td>
-                  </tr>
-                  <tr>
-                    <td class="spec-label">Bảo hành</td>
-                    <td>24 tháng (toàn bộ máy), hỗ trợ kỹ thuật 24/7</td>
-                  </tr>
-                </table>
-
-                <h3>Ưu điểm của sản phẩm</h3>
-                <ul>
-                  <li><strong>Hiệu suất cao:</strong> Xử lý nhanh chóng, hỗ trợ đa tác vụ mà không bị giật lag</li>
-                  <li><strong>Dễ sử dụng:</strong> Giao diện đơn giản, dễ học dễ làm cho nhân viên mới</li>
-                  <li><strong>Linh hoạt:</strong> Hỗ trợ nhiều loại hình kinh doanh khác nhau</li>
-                  <li><strong>An toàn:</strong> Mã hóa dữ liệu, sao lưu tự động, bảo vệ thông tin khách hàng</li>
-                  <li><strong>Hế thống hoàn chỉnh:</strong> Kết hợp hoàn hảo với phần mềm Hiệp POS</li>
-                </ul>
-
-                <h3>Gói hỗ trợ</h3>
-                <p>
-                  Khi mua máy POS Bán Hàng từ Hiệp POS, bạn sẽ được tặng:
-                </p>
-                <ul>
-                  <li>Hướng dẫn cài đặt và sử dụng máy</li>
-                  <li>1 tháng hỗ trợ cài đặt phần mềm miễn phí</li>
-                  <li>Tài liệu hướng dẫn tiếng Việt</li>
-                  <li>Hotline hỗ trợ 24/7</li>
-                  <li>Bảo hành 2 năm (toàn bộ máy)</li>
-                </ul>
+              <div class="thumbnail" onclick="changeImage(this)">
+                <img src="assets/images/may-in-nhiet-02.png" alt="Máy In Hóa Đơn Nhiệt - Ảnh 2">
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Sidebar -->
-        <div class="col-lg-4">
-          <!-- Contact Info Widget -->
-          <div class="sidebar-widget contact-widget">
-            <h4 class="sidebar-title">Liên hệ đặt hàng</h4>
-            <div class="contact-box">
-              <p class="contact-item">
-                <i class="uis uis-phone"></i>
-                <strong>Điện thoại:</strong><br>
-                <a href="tel:0855285872">085 528 5872</a>
-              </p>
-              <p class="contact-item">
-                <i class="uis uis-envelope"></i>
-                <strong>Email:</strong><br>
-                <a href="mailto:info@hieppos.vn">info@hieppos.vn</a>
-              </p>
-              <p class="contact-item">
-                <i class="uis uis-map-marker"></i>
-                <strong>Địa chỉ:</strong><br>
-                Phan Thiết, Bình Thuận
-              </p>
-              <button class="btn btn-primary w-100 mt-3">
-                <i class="uis uis-phone"></i> Gọi ngay để tư vấn
-              </button>
+        <!-- Product Info -->
+        <div class="col-12 col-lg-6">
+          <div class="product-info-detail">
+            <span class="product-category-badge">Máy In</span>
+            <h1 class="product-name">Máy In Hóa Đơn Nhiệt</h1>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+              </div>
+              <span class="rating-text">5.0 (12 đánh giá)</span>
             </div>
-          </div>
 
-          <!-- Specifications Quick Widget -->
-          <div class="sidebar-widget specs-widget">
-            <h4 class="sidebar-title">Thông số nhanh</h4>
-            <div class="specs-quick">
-              <div class="spec-item">
-                <span class="spec-key">Màn hình</span>
-                <span class="spec-value">15.6" Full HD</span>
+            <div class="product-price-block">
+              <span class="current-price">1.200.000₫</span>
+              <span class="original-price">1.500.000₫</span>
+              <span class="discount-badge">-20%</span>
+            </div>
+
+            <p class="product-short-desc">
+              Máy in hóa đơn nhiệt chuyên dùng cho cửa hàng, quán ăn, nhà hàng. Tốc độ in nhanh 150-200mm/s, 
+              kết nối USB và Mạng LAN, độ bền cao, hoạt động ổn định 24/7.
+            </p>
+
+            <div class="product-highlights">
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Tốc độ in 150-200mm/s</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-key">CPU</span>
-                <span class="spec-value">Intel i5</span>
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Kết nối USB / Mạng LAN</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-key">RAM</span>
-                <span class="spec-value">8GB DDR4</span>
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Khổ giấy 80mm</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-key">SSD</span>
-                <span class="spec-value">256GB NVMe</span>
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Bảo hành 12 tháng</span>
               </div>
-              <div class="spec-item">
-                <span class="spec-key">Bảo hành</span>
-                <span class="spec-value">2 năm</span>
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Hỗ trợ cài đặt miễn phí</span>
+              </div>
+              <div class="highlight-item">
+                <i class="uis uis-check-circle"></i>
+                <span>Giao hàng toàn quốc</span>
               </div>
             </div>
-          </div>
 
-          <!-- Related Products Widget -->
-          <div class="sidebar-widget related-products-widget">
-            <h4 class="sidebar-title">Sản phẩm liên quan</h4>
-            <div class="related-products-list">
-              <a href="product-detail.html" class="related-product-item">
-                <img src="assets/images/products/printer.jpg" alt="Máy in">
-                <div>
-                  <h5>Máy In Hóa Đơn</h5>
-                  <p class="price">3,990,000 ₫</p>
-                </div>
+            <div class="product-actions-detail">
+              <a href="tel:0855285872" class="btn-buy-now">
+                <i class="uis uis-phone"></i> Mua ngay - 085 528 5872
               </a>
-              <a href="product-detail.html" class="related-product-item">
-                <img src="assets/images/products/scanner.jpg" alt="Máy quét">
-                <div>
-                  <h5>Máy Quét Mã Vạch</h5>
-                  <p class="price">990,000 ₫</p>
-                </div>
+              <a href="https://zalo.me/0855285872" target="_blank" class="btn-zalo">
+                <img src="assets/images/icons/icon_zalo_50x50.png" alt="Zalo" class="zalo-icon"> Chat Zalo
               </a>
-              <a href="product-detail.html" class="related-product-item">
-                <img src="assets/images/products/label.jpg" alt="Máy in tem">
-                <div>
-                  <h5>Máy In Tem & Nhãn</h5>
-                  <p class="price">5,990,000 ₫</p>
-                </div>
-              </a>
+            </div>
+
+            <div class="product-guarantees">
+              <div class="guarantee-item">
+                <i class="uis uis-shield-check"></i>
+                <span>Bảo hành chính hãng</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="uis uis-truck"></i>
+                <span>Giao hàng toàn quốc</span>
+              </div>
+              <div class="guarantee-item">
+                <i class="uis uis-sync"></i>
+                <span>Đổi trả trong 7 ngày</span>
+              </div>
             </div>
           </div>
         </div>
@@ -337,75 +191,268 @@
     </div>
   </section>
 
-  <!-- RELATED PRODUCTS SECTION -->
-  <section class="related-products-section py-5 bg-light">
+  <!-- PRODUCT TABS -->
+  <section class="product-tabs-section py-4 py-lg-5 bg-light">
     <div class="container">
-      <h2 class="section-heading text-center mb-4">Sản phẩm khác trong danh mục</h2>
+      <ul class="nav nav-tabs product-nav-tabs" id="productTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc-pane" type="button"
+            role="tab" aria-controls="desc-pane" aria-selected="true">Mô tả sản phẩm</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs-pane" type="button"
+            role="tab" aria-controls="specs-pane" aria-selected="false">Thông số kỹ thuật</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-pane" type="button"
+            role="tab" aria-controls="reviews-pane" aria-selected="false">Đánh giá (12)</button>
+        </li>
+      </ul>
+      <div class="tab-content product-tab-content" id="productTabsContent">
+        <!-- Mô tả -->
+        <div class="tab-pane fade show active" id="desc-pane" role="tabpanel" aria-labelledby="desc-tab">
+          <div class="product-description">
+            <h3>Máy In Hóa Đơn Nhiệt - Giải Pháp In Ấn Chuyên Nghiệp</h3>
+            <p>Máy in hóa đơn nhiệt là thiết bị không thể thiếu trong hệ thống bán hàng hiện đại. Với công nghệ in nhiệt 
+              tiên tiến, máy cho tốc độ in nhanh, vận hành êm ái và bền bỉ theo thời gian.</p>
+            
+            <h4>Tính năng nổi bật</h4>
+            <ul>
+              <li><strong>Tốc độ in siêu nhanh:</strong> 150-200mm/s, phục vụ nhanh chóng trong giờ cao điểm.</li>
+              <li><strong>Kết nối đa dạng:</strong> Hỗ trợ USB và Mạng LAN, dễ dàng tích hợp với hệ thống POS.</li>
+              <li><strong>Khổ giấy 80mm:</strong> Phù hợp cho hóa đơn cửa hàng, nhà hàng, quán cà phê.</li>
+              <li><strong>Tự động cắt giấy:</strong> Cắt giấy tự động, tiết kiệm thời gian phục vụ.</li>
+              <li><strong>Độ bền cao:</strong> Thiết kế chắc chắn, hoạt động ổn định 24/7.</li>
+            </ul>
+
+            <h4>Ứng dụng</h4>
+            <p>Máy in hóa đơn nhiệt phù hợp cho nhiều loại hình kinh doanh:</p>
+            <div class="row g-3 mt-2">
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-store"></i>
+                  <span>Cửa hàng bán lẻ</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-restaurant"></i>
+                  <span>Nhà hàng, quán ăn</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-coffee"></i>
+                  <span>Cà phê, trà sữa</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-medkit"></i>
+                  <span>Nhà thuốc</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-shopping-bag"></i>
+                  <span>Siêu thị mini</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="app-item">
+                  <i class="uis uis-building"></i>
+                  <span>Khách sạn</span>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mt-4">Hình ảnh sản phẩm</h4>
+            <div class="row g-3">
+              <div class="col-6">
+                <img src="assets/images/may-in-nhiet.jpg" alt="Máy in hóa đơn - mặt trước" class="desc-image">
+              </div>
+              <div class="col-6">
+                <img src="assets/images/may-in-nhiet.jpg" alt="Máy in hóa đơn - mặt sau" class="desc-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thông số kỹ thuật -->
+        <div class="tab-pane fade" id="specs-pane" role="tabpanel" aria-labelledby="specs-tab">
+          <div class="specs-table-wrapper">
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td class="spec-label">Phương thức in</td>
+                  <td class="spec-value">In nhiệt trực tiếp</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Tốc độ in</td>
+                  <td class="spec-value">150 - 200 mm/s</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Độ phân giải</td>
+                  <td class="spec-value">203 DPI</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Khổ giấy</td>
+                  <td class="spec-value">80mm (chiều rộng)</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Đường kính cuộn giấy</td>
+                  <td class="spec-value">Tối đa 83mm</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Cắt giấy</td>
+                  <td class="spec-value">Tự động (Auto cutter)</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Kết nối</td>
+                  <td class="spec-value">USB + LAN (Ethernet)</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Hệ điều hành</td>
+                  <td class="spec-value">Windows / Linux / Android</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Nguồn điện</td>
+                  <td class="spec-value">DC 24V / 2.5A</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Kích thước</td>
+                  <td class="spec-value">145 x 195 x 148 mm</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Trọng lượng</td>
+                  <td class="spec-value">1.5 kg</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Bảo hành</td>
+                  <td class="spec-value">12 tháng</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Đánh giá -->
+        <div class="tab-pane fade" id="reviews-pane" role="tabpanel" aria-labelledby="reviews-tab">
+          <div class="reviews-section">
+            <div class="reviews-summary">
+              <div class="rating-big">
+                <span class="rating-number">5.0</span>
+                <div class="stars">
+                  <i class="uis uis-star"></i>
+                  <i class="uis uis-star"></i>
+                  <i class="uis uis-star"></i>
+                  <i class="uis uis-star"></i>
+                  <i class="uis uis-star"></i>
+                </div>
+                <span class="total-reviews">12 đánh giá</span>
+              </div>
+            </div>
+
+            <div class="review-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <strong>Anh Minh</strong>
+                  <div class="stars-small">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                  <span class="review-date">15/04/2026</span>
+                </div>
+                <p>Máy in chất lượng tốt, tốc độ nhanh. Đã dùng được 3 tháng vẫn hoạt động ổn định. Anh Hiệp hỗ trợ cài đặt rất nhiệt tình.</p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <strong>Chị Lan</strong>
+                  <div class="stars-small">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                  <span class="review-date">10/04/2026</span>
+                </div>
+                <p>Mình mua cho quán cà phê, in bill rất nhanh và rõ nét. Giá cả hợp lý, giao hàng nhanh. Rất hài lòng!</p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <strong>Anh Tùng</strong>
+                  <div class="stars-small">
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                    <i class="uis uis-star"></i>
+                  </div>
+                  <span class="review-date">05/04/2026</span>
+                </div>
+                <p>Dùng cho chuỗi cửa hàng, mua 5 máy đều chạy rất tốt. Bảo hành nhanh, hỗ trợ tận tình. Recommend cho các bạn kinh doanh!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED PRODUCTS -->
+  <section class="related-products py-4 py-lg-5">
+    <div class="container">
+      <h2 class="title-section text-center mb-4">Sản Phẩm Liên Quan</h2>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <a href="product-detail.html" class="product-card-link">
-          <div class="product-card">
-            <div class="product-card-image">
-              <img src="assets/images/products/printer.jpg" alt="Máy In Hóa Đơn">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="related-card">
+            <div class="related-img">
+              <img src="assets/images/may-in-nhiet.jpg" alt="Máy POS Bán Hàng">
             </div>
-            <div class="product-card-content">
-              <h3>Máy In Hóa Đơn</h3>
-              <p class="product-card-desc">Máy in nhiệt 80mm, tốc độ in 300mm/s</p>
-              <p class="product-card-price">3,990,000 ₫</p>
-              <div class="product-card-rating">
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star-outline"></i>
-              </div>
+            <div class="related-info">
+              <h5><a href="product-detail.html">Máy POS Bán Hàng</a></h5>
+              <div class="related-price">Liên hệ</div>
             </div>
           </div>
-          </a>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <a href="product-detail.html" class="product-card-link">
-          <div class="product-card">
-            <div class="product-card-image">
-              <img src="assets/images/products/scanner.jpg" alt="Máy Quét Mã Vạch">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="related-card">
+            <div class="related-img">
+              <img src="assets/images/may-in-nhiet.jpg" alt="Máy Quét Mã Vạch">
             </div>
-            <div class="product-card-content">
-              <h3>Máy Quét Mã Vạch</h3>
-              <p class="product-card-desc">Quét nhanh, độ chính xác cao, kết nối USB</p>
-              <p class="product-card-price">990,000 ₫</p>
-              <div class="product-card-rating">
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-              </div>
+            <div class="related-info">
+              <h5><a href="product-detail.html">Máy Quét Mã Vạch</a></h5>
+              <div class="related-price">350.000₫</div>
             </div>
           </div>
-          </a>
         </div>
-
-        <div class="col-md-6 col-lg-4">
-          <a href="product-detail.html" class="product-card-link">
-          <div class="product-card">
-            <div class="product-card-image">
-              <img src="assets/images/products/label.jpg" alt="Máy In Tem & Nhãn">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="related-card">
+            <div class="related-img">
+              <img src="assets/images/may-in-nhiet.jpg" alt="Giấy In Nhiệt">
             </div>
-            <div class="product-card-content">
-              <h3>Máy In Tem & Nhãn</h3>
-              <p class="product-card-desc">In tem k kích thước A4, độ phân giải cao</p>
-              <p class="product-card-price">5,990,000 ₫</p>
-              <div class="product-card-rating">
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star"></i>
-                <i class="uis uis-star-outline"></i>
-              </div>
+            <div class="related-info">
+              <h5><a href="product-detail.html">Giấy In Nhiệt 80mm</a></h5>
+              <div class="related-price">35.000₫ / cuộn</div>
             </div>
           </div>
-          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="related-card">
+            <div class="related-img">
+              <img src="assets/images/may-in-nhiet.jpg" alt="Ngăn Kéo Đựng Tiền">
+            </div>
+            <div class="related-info">
+              <h5><a href="product-detail.html">Ngăn Kéo Đựng Tiền</a></h5>
+              <div class="related-price">650.000₫</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -414,14 +461,14 @@
   <!-- CTA SECTION -->
   <section class="cta-section py-5 bg-primary">
     <div class="container text-center text-white">
-      <h2 class="mb-3">Bạn Cần Tư Vấn?</h2>
-      <p class="mb-4 fs-5">Liên hệ với đội hỗ trợ của chúng tôi để được tư vấn về sự lựa chọn sản phẩm phù hợp</p>
+      <h2 class="mb-3">Bạn Cần Tư Vấn Thêm?</h2>
+      <p class="mb-4 fs-5">Liên hệ ngay để được hỗ trợ chọn sản phẩm phù hợp và báo giá tốt nhất</p>
       <div class="d-flex justify-content-center gap-3 flex-wrap">
         <a href="tel:0855285872" class="btn btn-light btn-lg">
           <i class="uis uis-phone"></i> Gọi ngay: 085 528 5872
         </a>
         <a href="https://zalo.me/0855285872" target="_blank" class="btn btn-outline-light btn-lg">
-          <i class="uis uis-message"></i> Zalo
+          <i class="uis uis-message"></i> Chat Zalo
         </a>
       </div>
     </div>
@@ -444,7 +491,7 @@
         <div class="row g-4">
           <div class="col col-12 col-md-6 col-lg-4">
             <div class="logo">
-              <a href="index.html"><img src="assets/images/icons/logo2.png" alt="Logo"></a>
+              <a href="index.html"><img src="/assets/images/icons/logo2.png" alt="Logo"></a>
             </div>
             <p>Cung cấp phần mềm bán hàng - Thiết bị bán hàng trên toàn quốc.</p>
             <p>Điện thoại: 085 528 5872</p>
@@ -452,23 +499,24 @@
           <div class="col col-12 col-md-6 col-lg-4">
             <h3 class="title">Giới Thiệu</h3>
             <ul class="quick-links">
-              <li><a href="aboutus.html">Về hiệp POS</a></li>
-              <li><a href="products.html">Sản Phẩm</a></li>
-              <li><a href="#">Điều khoản & chính sách</a></li>
+              <li><a href="#">Về hiệp POS</a></li>
+              <li><a href="customers.html">Khách Hàng</a></li>
+              <li><a href="#">Điều khoản & chính sách sử dụng</a></li>
               <li><a href="#">Liên hệ</a></li>
             </ul>
           </div>
           <div class="col col-12 col-md-6 col-lg-4">
             <h3 class="title">Hỗ Trợ</h3>
             <ul class="quick-links">
-              <li><a href="driver.html">Tải driver máy in</a></li>
+              <li><a href="/driver.html">Tải driver máy in</a></li>
               <li><a href="#">Hướng dẫn cài đặt máy in</a></li>
               <li><a href="#">Hướng dẫn sử dụng</a></li>
-              <li><a href="news.html">Tin tức & Bài viết</a></li>
+              <li><a href="#">Tin tức</a></li>
             </ul>
           </div>
         </div>
-        <div class="copyright pt-3 border-top text-center">&copy; 2026 Bản quyền thuộc về Máy In Bill Tính tiền Phan Thiết.
+        <div class="copyright pt-3 border-top text-center">&copy; 2026 Bản quyền thuộc về Máy In Bill Tính tiền Phan
+          Thiết.
         </div>
       </div>
     </div>
@@ -480,12 +528,10 @@
       <img src="assets/images/icons/phone.png" alt="Phone" class="fab-icon-zalo">
       <span class="fab-label">Gọi ngay</span>
     </a>
-
     <a href="https://zalo.me/0855285872" class="fab-item fab-zalo" target="_blank" title="Liên hệ Zalo">
       <img src="assets/images/icons/icon_zalo_50x50.png" alt="Zalo" class="fab-icon-zalo">
       <span class="fab-label">Zalo</span>
     </a>
-
     <a href="https://www.facebook.com/nquyhiep" class="fab-item fab-facebook" target="_blank" title="Liên hệ Facebook">
       <img src="assets/images/icons/icon-facebook-100x100.png" alt="Facebook" class="fab-icon-facebook">
       <span class="fab-label">Facebook</span>
@@ -495,16 +541,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
   <script>
-    // Product image gallery
-    document.querySelectorAll('.thumbnail-image').forEach(thumb => {
-      thumb.addEventListener('click', function() {
-        document.querySelectorAll('.thumbnail-image').forEach(t => t.classList.remove('active'));
-        this.classList.add('active');
-        document.querySelector('.product-main-image img').src = this.src;
+    function changeImage(thumb) {
+      var src = thumb.querySelector('img').src;
+      document.getElementById('mainImage').src = src;
+      document.querySelectorAll('.thumbnail').forEach(function (t) {
+        t.classList.remove('active');
       });
-    });
+      thumb.classList.add('active');
+    }
   </script>
 </body>
 
